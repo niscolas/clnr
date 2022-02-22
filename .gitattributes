@@ -1,0 +1,157 @@
+## macros
+
+[attr] unityyaml -text merge=unityyamlmerge diff
+[attr] lfs -text filter=lfs diff=lfs merge=lfs
+
+## configs 
+
+* text=auto
+
+## code
+
+*.cginc text
+*.cs text diff=csharp 
+*.shader text
+
+## unity (yaml)
+*.anim unityyaml
+*.asmdef unityyaml -linguist-generated
+*.asset unityyaml
+*.brush unityyaml
+*.controller unityyaml
+*.flare unityyaml
+*.fontsettings unityyaml
+*.giparams unityyaml
+*.guiskin unityyaml
+*.mask unityyaml
+*.mat unityyaml
+*.meta unityyaml
+*.mixer unityyaml
+*.overrideController unityyaml
+*.physicMaterial unityyaml
+*.physicsMaterial2D unityyaml
+*.playable unityyaml
+*.prefab unityyaml
+*.preset unityyaml
+*.renderTexture unityyaml
+*.shadervariants unityyaml
+*.spriteatlas unityyaml
+*.terrainlayer unityyaml
+*.unity unityyaml
+
+# terrain assets must have "TER-" prefix
+TER-*.asset -unityyaml lfs
+
+# navmesh assets must have "NAVME-" prefix
+NAVME-*.asset -unityyaml lfs
+
+## unity (binary)
+*.bundle lfs
+*.cubemap lfs
+*.unitypackage lfs
+
+## 3d
+
+*.3dm lfs
+*.3ds lfs
+*.FBX lfs
+*.blend lfs
+*.c4d lfs
+*.collada lfs
+*.dae lfs
+*.dfx lfs
+*.dxf lfs
+*.fbx lfs
+*.jas lfs
+*.lws lfs
+*.lwo lfs
+*.lwo2 lfs
+*.lxo lfs
+*.ma lfs
+*.max lfs
+*.mb lfs
+*.obj lfs
+*.ply lfs
+*.skp lfs
+*.stl lfs
+*.ztl lfs
+
+## audio
+
+*.aif lfs
+*.aiff lfs
+*.it lfs
+*.mod lfs
+*.mp3 lfs
+*.ogg lfs
+*.s3m lfs
+*.wav lfs
+*.xm lfs
+
+## bundles and binaries
+
+*.dll lfs
+*.exe lfs
+*.mdb lfs
+*.pdb lfs
+*.so lfs
+
+## creative software
+*.rns lfs
+*.reason lfs
+*.lxo lfs
+*.exr lfs
+
+## documents
+
+*.pdf lfs
+
+## fonts
+
+*.otf lfs
+*.ttf lfs
+*.woff2 lfs
+
+## image
+
+*.afdesign lfs
+*.afphoto lfs
+*.ai lfs
+*.bmp lfs
+*.dds lfs
+*.gif lfs
+*.hdr lfs
+*.iff lfs
+*.jpeg lfs
+*.jpg lfs
+*.pict lfs
+*.png lfs
+*.psd lfs
+*.svg lfs
+*.tga lfs
+*.tif lfs
+*.tiff lfs
+*.webp lfs
+
+## video
+
+*.asf lfs
+*.avi lfs
+*.mkv lfs
+*.mov lfs
+*.mp4 lfs
+*.mpeg lfs
+*.mpg lfs
+
+## packaging
+
+*.7z lfs
+*.br lfs
+*.gz lfs
+*.rar lfs
+*.tar lfs
+*.zip lfs
+
+## others
+
+*.a lfs
